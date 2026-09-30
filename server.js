@@ -22,6 +22,10 @@ app.use((req, res, next) => {
   next();
 });
 
+// Serve static asset directories explicitly
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/src/assets', express.static(path.join(__dirname, 'src/assets')));
+
 // Serve static files from root directory
 app.use(express.static(__dirname, {
   extensions: ['html'],

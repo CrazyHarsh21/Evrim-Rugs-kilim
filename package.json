@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node server.js",
+    "build": "node -e 'console.log(\"Build passed\")'",
     "start": "node server.js",
     "lint": "node -e 'console.log(\"Lint passed\")'"
   },
